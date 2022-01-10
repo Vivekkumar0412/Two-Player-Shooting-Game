@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooting Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- container will contain all the data -->
+    <div class="container">
+      <!-- playerProfile will containe all the data of player profiles -->
+      <div class="playerProfile">
+        <!-- player 1 profile -->
+        <div class="player1Profile">
+          <h1>Player 1</h1>
+          <i class="fa fa-star-o star" aria-hidden="true"></i>
+          <i class="fa fa-star-o star" aria-hidden="true"></i>
+          <i class="fa fa-star-o star" aria-hidden="true"></i>
+          <i class="fa fa-star-o star" aria-hidden="true"></i>
+          <i class="fa fa-star-o star" aria-hidden="true"></i>
+          <div id="player1Score">100</div>
+        </div>
+        <div class="tournamentScore">
+          <span id="player1TournamentScore" class="tournamentScore">0</span> :
+          <span id="player2TournamentScore" class="tournamentScore">0</span>
+        </div>
+        <!-- player 2 profile -->
+        <div class="player2Profile">
+          <h1>Player 2</h1>
+          <i class="fa fa-star-o star" aria-hidden="true"></i>
+          <i class="fa fa-star-o star" aria-hidden="true"></i>
+          <i class="fa fa-star-o star" aria-hidden="true"></i>
+          <i class="fa fa-star-o star" aria-hidden="true"></i>
+          <i class="fa fa-star-o star" aria-hidden="true"></i>
+          <div id="player2Score">100</div>
+        </div>
+      </div>
+      <div class="btn">
+        <div class="fire"><button id="fire1">Fire</button></div>
+        <div class="newGame">
+          <button id="newGame" onclick="newGame()">New Game</button>
+        </div>
+        <div class="newTournam">
+          <button id="newTournament" onclick="newTournament()">
+            New Tournament
+          </button>
+        </div>
+        <div class="fire"><button id="fire2">Fire</button></div>
+      </div>
+    </div>
+    <script>
+      // initilizing the values
+      //   score of player 1
+      //   let player1Score = parseInt(
+      //     document.getElementById("player1Score").innerText
+      //   );
+      //   score of player 2
+      // let player2Score = parseInt(
+      //     document.getElementById("player2Score").innerText
+      //   );
+      //   inilitazing the value to make fire power between 0 - 5;
+      let firePower = 0;
+      // getting the fire buttons
+      let fire1 = document.getElementById("fire1");
+      let fire2 = document.getElementById("fire2");
+      //   adding eventlistenr on fire 1
+      fire1.addEventListener("click", function () {
+        if (player2Score.innerText <= 0) {
+          alert("Player 1 won the match");
+          document.getElementById("player1TournamentScore").innerText =
+            parseInt(
+              document.getElementById("player1TournamentScore").innerText
+            ) + 1;
+          newGame();
+        } else {
+          firePower = Math.floor(Math.random() * 5) + 1;
+          player2Score.innerText = parseInt(player2Score.innerText - firePower);
+        }
+      });
+      //   adding eventlistener on fire 2
+      fire2.addEventListener("click", function () {
+        if (player1Score.innerText <= 0) {
+          alert("Player 2 won the match");
+          document.getElementById("player2TournamentScore").innerText =
+            parseInt(
+              document.getElementById("player2TournamentScore").innerText
+            ) + 1;
+          newGame();
+        } else {
+          firePower = Math.floor(Math.random() * 5) + 1;
+          player1Score.innerText = parseInt(player1Score.innerText - firePower);
+        }
+      });
+      //   new game function
+      function newGame() {
+        player2Score.innerText = 100;
+        player1Score.innerText = 100;
+      }
+      function newTournament() {
+        document.getElementById("player1TournamentScore").innerText = 0;
+        document.getElementById("player2TournamentScore").innerText = 0;
+        newGame();
+      }
+    </script>
+  </body>
+</html>

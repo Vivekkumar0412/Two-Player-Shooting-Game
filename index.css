@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* container styling */
+.container {
+  /* border: 5px solid red; */
+  height: 90vh;
+  display: flex;
+  background: url("2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px 40px;
+}
+.playerProfile {
+  /* border: 5px solid green; */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  margin: 10px 20px;
+}
+.btn {
+  /* border: 4px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+/* desing the inner elements */
+#player1Score {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+#player2Score {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.star {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+h1 {
+  color: white;
+  font-weight: bold;
+}
+/* buttons styling */
+#fire1 {
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  box-shadow: 1px 5px 22px cyan;
+  cursor: pointer;
+}
+#fire2 {
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  box-shadow: 1px 5px 22px cyan;
+  cursor: pointer;
+}
+#newGame {
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  box-shadow: 1px 5px 22px cyan;
+  cursor: pointer;
+}
+#fire1:hover {
+  box-shadow: 1px 5px 22px red;
+  color: red;
+}
+#fire2:hover {
+  box-shadow: 1px 5px 22px red;
+  color: red;
+}
+#newGame:hover {
+  color: cyan;
+}
+.tournamentScore {
+  color: wheat;
+  font-size: 80px;
+  font-weight: bolder;
+}
+#newTournament {
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  box-shadow: 1px 5px 22px cyan;
+  cursor: pointer;
+}
