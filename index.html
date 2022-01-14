@@ -71,6 +71,10 @@
       let fire2 = document.getElementById("fire2");
       //   adding eventlistenr on fire 1
       fire1.addEventListener("click", function () {
+          if(parseInt(document.getElementById("player1TournamentScore").innerText)>=2){
+              alert("PLAYER 1 WON THE TOURNAMENT !");
+              newTournament();
+          }
         if (player2Score.innerText <= 0) {
           alert("Player 1 won the match");
           document.getElementById("player1TournamentScore").innerText =
@@ -85,6 +89,10 @@
       });
       //   adding eventlistener on fire 2
       fire2.addEventListener("click", function () {
+          if(parseInt(document.getElementById("player2TournamentScore").innerText)>=2){
+              alert("PLAYER 2 WON THE TOURNAMENT !");
+              newTournament();
+          }
         if (player1Score.innerText <= 0) {
           alert("Player 2 won the match");
           document.getElementById("player2TournamentScore").innerText =

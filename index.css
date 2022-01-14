@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  
 }
 /* container styling */
 .container {
@@ -104,4 +105,7 @@ h1 {
   color: white;
   box-shadow: 1px 5px 22px cyan;
   cursor: pointer;
+}#newTournament:hover{
+    color: rgb(171, 240, 12);
+    box-shadow: 1px 5px 22px rgb(171, 240, 12);
 }
