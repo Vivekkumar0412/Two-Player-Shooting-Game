@@ -8,4 +8,6 @@
 ![4](https://user-images.githubusercontent.com/58084456/149608307-c3de70bb-47e2-4fae-adda-e12890a06bdc.png)
 # Updated tournament score
 ![5](https://user-images.githubusercontent.com/58084456/149608320-efd9a84e-3243-4a74-835a-b4dd073ad7e4.png)
-#When player 2 won the match
+# When player 2 won the match
+![6](https://user-images.githubusercontent.com/58084456/149608346-3465dd7d-5603-4249-8f3a-cb170cb46bdb.png)
+# Updated tournament score
