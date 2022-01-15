@@ -7,3 +7,5 @@
 # When player 1 won the match
 ![4](https://user-images.githubusercontent.com/58084456/149608307-c3de70bb-47e2-4fae-adda-e12890a06bdc.png)
 # Updated tournament score
+![5](https://user-images.githubusercontent.com/58084456/149608320-efd9a84e-3243-4a74-835a-b4dd073ad7e4.png)
+#When player 2 won the match
