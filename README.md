@@ -5,4 +5,5 @@
 # Player 2 fire button
 ![3](https://user-images.githubusercontent.com/58084456/149608267-53d6fc1c-89f8-4f2f-b762-64540a848360.png)
 # When player 1 won the match
-
+![4](https://user-images.githubusercontent.com/58084456/149608307-c3de70bb-47e2-4fae-adda-e12890a06bdc.png)
+# Updated tournament score
