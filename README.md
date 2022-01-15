@@ -13,3 +13,5 @@
 # Updated tournament score
 ![7](https://user-images.githubusercontent.com/58084456/149608374-63b00ae0-5fc2-45bc-adf0-2822b706a0e7.png)
 # When player 1 won the tournament
+![8](https://user-images.githubusercontent.com/58084456/149608415-298a54e7-ddcf-4cd6-951e-944fd273c886.png)
+
